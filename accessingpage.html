@@ -87,7 +87,7 @@
                 <!-- add group button for mobile view -->
                 <div id="mobile-view-btn">
                     <div id="add-group-duplicate">
-                        <button type="button" class="btn btn-primary mb-1 text-center font-weight-bold" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fa fa-users" aria-hidden="true"></i>ADD GROUPS</button>
+                        <button type="button" class="btn btn-primary mb-1 text-center font-weight-bold" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="add-group"><i class="fa fa-users" aria-hidden="true"></i>ADD GROUPS</button>
                     </div>
                 </div>
                 <!--  -->
@@ -139,7 +139,7 @@
                                 <th scope="col">Delete</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="main-table">
                             <tr>
                                 <th scope="row">1</th>
 
@@ -151,6 +151,7 @@
                                 <td style="text-align: center;"><i class="fa fa-trash" aria-hidden="true" id="deleteicon"></i>
                                 </td>
                             </tr>
+<!--
                             <tr>
                                 <th scope="row">2</th>
 
@@ -173,6 +174,7 @@
                                 <td style="text-align: center;"><i class="fa fa-trash" aria-hidden="true" id="deleteicon"></i>
                                 </td>
                             </tr>
+-->
 
                         </tbody>
                     </table>
@@ -201,23 +203,23 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row">1</th>
-                                            <td id="link"><a href="#">ABC</a></td>
+                                            <td id="link"><a href="#" class="name" id="getval" data-dismiss="modal">ABC</a></td>
                                             <td>
                                                 1, 5, 6
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td id="link"><a href="#">ABC</a></td>
+                                            <th scope="row">2</th>
+                                            <td id="link"><a href="#" class="name" id="getval" data-dismiss="modal">DEF</a></td>
                                             <td>
-                                                1, 5, 6
+                                                2, 3
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td id="link"><a href="#">ABC</a></td>
+                                            <th scope="row">3</th>
+                                            <td id="link"><a href="#" class="name" id="getval" data-dismiss="modal">GHI</a></td>
                                             <td>
-                                                1, 5, 6
+                                                4
                                             </td>
                                         </tr>
 
@@ -234,7 +236,7 @@
 
     </div>
     <!-- /.page-wrapper -->
-
+    <script src="script.js"></script>
 </body>
 
 </html>
